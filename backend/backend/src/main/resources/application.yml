@@ -1,0 +1,15 @@
+server:
+  port: 5000
+spring:
+  datasource:
+    password: postgres
+    url: jdbc:postgresql://aams.c34qoakmiv4w.eu-north-1.rds.amazonaws.com:5432/aams
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
